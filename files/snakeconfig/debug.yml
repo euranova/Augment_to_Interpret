@@ -1,0 +1,18 @@
+# Only used to debug
+
+# snakemake --resources golden_ticket=1 --cores all --restart-times 0 --configfile files/snakeconfig/debug.yml
+
+grid_search_params:
+  losses:
+    - simclr_double_aug_info_negative
+    - gsat
+
+  datasets:
+    - ba_2motifs
+    - tree_cycle
+
+  seeds: [0, 1]
+  watchman_status: [0]  # necessary for node classif
+
+run_params:
+  epochs: 20

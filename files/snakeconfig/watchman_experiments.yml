@@ -1,0 +1,13 @@
+# ------------------------ Grid search parameters ---------------------------- #
+run_posthoc_analysis: False
+run_baselines: False
+
+grid_search_params:
+  losses:
+    - gsat
+    - simclr_double_aug
+    - simclr_double_aug_info
+    - simclr_double_aug_negative
+    - simclr_double_aug_info_negative
+
+  watchman_status: [1, 0]

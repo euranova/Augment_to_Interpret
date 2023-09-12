@@ -1,0 +1,11 @@
+# ------------------------ Grid search parameters ---------------------------- #
+run_posthoc_analysis: False
+run_baselines: False
+
+grid_search_params:
+  datasets:
+    - tree_cycle
+    - tree_grid
+    - cora
+
+  watchman_status: [0]  # necessary for node classif

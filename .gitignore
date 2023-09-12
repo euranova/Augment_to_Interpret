@@ -1,0 +1,13 @@
+.idea
+.vscode
+**/__pycache__
+**/.ipynb_checkpoints
+**/.pyc
+.snakemake
+augment_to_interpret.egg-info/
+
+files/*
+!files/snakeconfig/
+
+tests/test_files/tmp
+sandbox

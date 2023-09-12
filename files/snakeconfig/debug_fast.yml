@@ -1,0 +1,17 @@
+# Only used to debug
+
+# snakemake --resources golden_ticket=1 --cores all --restart-times 0 --configfile files/snakeconfig/debug_fast.yml
+
+run_baselines: False
+
+grid_search_params:
+  losses:
+    - simclr_double_aug_info_negative
+
+  datasets:
+    - ba_2motifs
+
+  seeds: [0, 1]
+
+run_params:
+  epochs: 3

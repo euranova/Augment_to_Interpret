@@ -1,0 +1,14 @@
+# ------------------------ Grid search parameters ---------------------------- #
+run_posthoc_analysis: False
+run_baselines: False
+
+grid_search_params:
+  losses:
+    - gsat
+    - simclr_double_aug_info_negative
+
+  datasets:
+    - ba_2motifs
+    - mutag
+
+  r_info_loss: [0.1, 0.3, 0.5, 0.7, 0.9]

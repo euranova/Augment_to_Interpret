@@ -1,0 +1,3 @@
+# ------------------------ Grid search parameters ---------------------------- #
+run_posthoc_analysis: False
+run_baselines: False

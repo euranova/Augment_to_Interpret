@@ -1,0 +1,46 @@
+# ------------------------ Grid search parameters ---------------------------- #
+# Each element of grid_search_params will be a list
+# List of experiments to be run will be the *set product* of all these lists
+
+# Simply do the experiments, or also do the posthoc analysis of the runs ?
+run_posthoc_analysis: True
+
+# Do we also run the baselines (ADGCL, MEGA, ...)
+run_baselines: True
+
+# Lists written as [a,b] or -a \n -b are equivalent.
+grid_search_params:
+  losses:
+    - gsat
+    - simclr_double_aug
+    - simclr_double_aug_info
+    - simclr_double_aug_negative
+    - simclr_double_aug_info_negative
+
+
+  datasets:
+    - ba_2motifs    # Simplest dataset for quick tests, but quite easy
+    - mutag         # Real large dataset, NOTE Takes a lot of RAM
+    - spmotif_0.5   # Spurious correlations (negative control)
+
+  seeds: [0, 1, 2]
+  r_info_loss: [0.7]
+  temperature_edge_sampling: [1]
+
+  # Try both with (1) and without (0)...
+
+  # The watchman, the feature selector
+#  watchman_status: [1, 0]
+  watchman_status: [1]
+
+#  feature_selector_status: [1, 0]
+  feature_selector_status: [0]
+
+#  loss_weights : [1, 15] # Weights to try for the (currently) info loss, when applicable
+  loss_weights: [1]
+
+
+# ------------------------ Individual run parameters ------------------------- #
+run_params:
+  epochs: 150
+  cuda: 0
