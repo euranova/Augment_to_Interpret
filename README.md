@@ -1,7 +1,9 @@
 # Augment to Interpret
 
 This repository contains the official implementation to reproduce the results of the paper
-*Augment to Interpret: Unsupervised and Inherently Interpretable Graph Embeddings*.
+*Augment to Interpret: Unsupervised and Inherently Interpretable Graph Embeddings*,
+by G. Scafarto, M. Ciortan, S. Tihon and Q. Ferré.
+
 
 ## How to install
 This repository uses Docker to run. Install [Docker](https://www.docker.com/) if necessary.

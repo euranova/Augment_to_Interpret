@@ -16,8 +16,8 @@ def read(filename):
 setup(
     name="augment_to_interpret",
     version="0.1",
-    author="Anonymous Author",
-    author_email="",
+    author="Gregory Scafarto, Madalina Ciortan, Simon Tihon and Quentin Ferré",
+    author_email="firstname.lastname@euranova.eu",
     description="Produces the results of the paper Augment to Interpret: "
                 "Unsupervised and Inherently Interpretable Graph Embeddings",
     # license="",
